@@ -7,7 +7,7 @@ rule PAS_PHP_WEBSHELL
     strings:
         $x1 = "2410985280"
 
-        $s1 = "<?php" nocase
+        $s1 = "<?php" nocase ascii
         $s2 = "if(!EMPTY" nocase ascii
         $s3 = "gzuncompress" nocase  ascii
         $s4 = "_cook" nocase  ascii
